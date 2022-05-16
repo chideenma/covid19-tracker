@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {    
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+.nav-bar {
+        width: 100vw;
+        padding: 0 20px;
+        background-color: #fff;
+        display: block;
+        border-bottom: 1px solid #E3E7EE;
+}
+.nav-left {
+    display: block;
+}
+.logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.44px;
+    color: #2B6FF3;
+}
+
+.nav-center > a {
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 16.59px;
+}
+.nav-bar > button {
+    background-color: #C4C4C41F;
+    border: none;
+    color: #5F6368;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 9px;
+}
+.eclipse {
+    padding-left: 13px;
+}
+@media (min-width: 768px) {
+    .nav-bar {
+        width: 100vw;
+        height: 80px;
+        padding: 0 48px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #E3E7EE;
+    }
+    .nav-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding:  0 90px;
+    }
+    .nav-center {
+        display: flex;
+        padding: 0 20px;
+    }
+
+    .nav-center > a {
+        padding: 10px 20px;
+    }
+
+}
