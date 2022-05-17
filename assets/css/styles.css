@@ -10,12 +10,15 @@
 body {
     font-family: 'Rubik', sans-serif;
 }
+.app {
+    background-color: #F3F5F8;
+}
 .nav-bar {
         width: 100vw;
         padding: 0 20px;
         background-color: #fff;
         display: block;
-        border-bottom: 1px solid #E3E7EE;
+        box-shadow: 1px 0px 4px 0px #0000001A;
 }
 .nav-left {
     display: block;
@@ -30,7 +33,7 @@ body {
 
 .nav-center > a {
     display: block;
-    padding: 20px 0;
+    padding: 10px 0;
     text-decoration: none;
     color: #000000;
     text-transform: uppercase;
@@ -42,11 +45,107 @@ body {
     color: #5F6368;
     padding: 10px;
     border-radius: 5px;
-    margin-right: 9px;
+    padding-bottom: 10px;
 }
 .eclipse {
     padding-left: 13px;
 }
+.hero {
+    padding: 48px 48px 48px 90px;
+}
+.hero > h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.44px;
+}
+.global-stats {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.totalcases, .activecases, .recovered, .totaldeaths  {
+    flex-basis: 1;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.totalcases {
+    background: rgba(43, 111, 243, 0.05);
+}
+.circular {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.totalcases > .circular {
+    background: rgba(43, 111, 243, 0.05);
+}
+.circular-inner > h1 {
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    line-height: 21.33px;
+    text-transform: capitalize;
+}
+.circular-inner > .count {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    text-align: center;
+    padding-top: 16px;
+}
+.totalcases > .circular > .circular-inner > .count {
+    color:  #2b6ff3;
+}
+.activecases > .circular > .circular-inner > .count {
+    color: #f39911;
+}
+.recovered > .circular > .circular-inner > .count {
+    color: #16b442;
+}
+.totaldeaths > .circular > .circular-inner > .count {
+    color: #d63232;
+}
+.circular-inner > .increment {
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;
+    padding-top: 5px;
+    color: #777777;
+}
+.circular-inner > span {
+    display: block;
+}
+.totalcases > .circular > .circular-inner {
+
+}
+.activecases {
+    background: rgba(243, 153, 17, 0.05);
+}
+.activecases > .circular {
+    background: rgba(243, 153, 17, 0.05);
+}
+.recovered {
+    background: rgba(22, 180, 66, 0.05);
+}
+.recovered > .circular {
+    background: rgba(22, 180, 66, 0.05);
+}
+.totaldeaths {
+    background: rgba(170, 42, 42, 0.05);
+}
+.totaldeaths > .circular {
+    background: rgba(170, 42, 42, 0.05);
+}
+
+
 @media (min-width: 768px) {
     .nav-bar {
         width: 100vw;
@@ -64,7 +163,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        padding:  0 90px;
+        padding:  0 40px;
     }
     .nav-center {
         display: flex;
@@ -73,6 +172,16 @@ body {
 
     .nav-center > a {
         padding: 10px 20px;
+    }
+    .nav-bar > button {
+        padding-bottom: 0;
+    }
+    .global-stats {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
     }
 
 }
