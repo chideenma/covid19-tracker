@@ -51,12 +51,13 @@ body {
     padding-left: 13px;
 }
 .hero {
-    padding: 48px 48px 48px 90px;
+    padding: 20px;
 }
 .hero > h1 {
     font-weight: 500;
     font-size: 24px;
     line-height: 28.44px;
+    padding-bottom: 30px;
 }
 .global-stats {
     display: flex;
@@ -144,7 +145,131 @@ body {
 .totaldeaths > .circular {
     background: rgba(170, 42, 42, 0.05);
 }
+.nations-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 48px;
+}
+.nations > h1 {
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.44px;
+}
+.nations > p {
+    padding: 0 30px;
+    color: #777F8D;
+    text-transform: capitalize;
+}
+.country-pill {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: none;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+.country-pill > .country-span {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.country-pill > .country-span > span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.59px;
+}
+.country-pill:hover {
+    background-color: rgba(238, 238, 238, 0.34);
+}
+.country-pill > .country-count {
+    color: #2B6FF3;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+}
+.nations {
+    background-color: #fff;
+    padding: 20px;
+}
+.countries-stats > p {
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
 
+}
+.countries-stats-items {
+    display: flex;
+    justify-content: space-between;
+}
+.countries-stats-items-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.countries-stats-items-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.items-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid #F1F4FA;
+    background-color: transparent;
+}
+.button-totalcases {
+    display: block;
+    color: #777F8D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.59px;
+    text-align: center;
+    padding-top: 5px;
+}
+.totalcasescount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #2B6FF3;
+}
+.recoveredcasescount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #16B442;
+}
+.newcasescount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #2B6FF3;
+}
+.activecasescount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #F39911;
+}
+
+.totaldeathscount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #D63232;
+
+}
 
 @media (min-width: 768px) {
     .nav-bar {
@@ -178,10 +303,20 @@ body {
     }
     .global-stats {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         background-color: #fff;
         padding: 20px;
         border-radius: 5px;
+    }
+    .hero {
+        padding: 48px 48px 48px 90px;
+    }
+    .hero > h1 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28.44px;
+        padding-bottom: 0;
     }
 
 }
