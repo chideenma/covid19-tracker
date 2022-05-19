@@ -147,9 +147,9 @@ body {
 }
 .nations-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         width: 100%;
-        gap: 48px;
+        padding: 20px;
 }
 .nations > h1 {
     padding: 12px 30px;
@@ -202,8 +202,7 @@ body {
 
 }
 .countries-stats-items {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 .countries-stats-items-left {
     display: flex;
@@ -216,8 +215,6 @@ body {
     gap: 20px;
 }
 .items-button {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     align-items: center;
     padding: 15px 20px;
@@ -231,7 +228,8 @@ body {
     font-size: 14px;
     line-height: 16.59px;
     text-align: center;
-    padding-top: 5px;
+    padding: 5px 0;
+
 }
 .totalcasescount {
     display: block;
@@ -270,7 +268,92 @@ body {
     color: #D63232;
 
 }
+.items-button > span {
+    text-align: center;
+}
+.world-map > img {
+    width: 100%;
+}
+.symptoms {
+    display: grid;
+    grid-template-columns: 1fr;
+        width: 100%;
+        gap: 48px;
+        padding: 20px;
+}
+.symptoms-intro {
+    padding-top: 25px;
+}
+.symptoms-intro > span {
+    background-color: #E814540F;
+    color: #E81454;
+    padding: 10px 20px;
+    border-radius: 30px;
 
+}
+.symptoms-intro > h1 {
+    padding-top: 46px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42.66px;
+    padding-bottom: 18px;
+}
+.symptoms-intro > p {
+    font-size: 15px;
+    line-height: 31.44px;
+    color: #5F6368;
+}
+.symptoms-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.symptoms-image > img {
+    width: 100%;
+}
+.prevention {
+    padding-top: 48px;
+    background-color: #fff;
+}
+.prevention-content {
+    display: grid;
+    grid-template-columns: 1fr;
+        width: 100%;
+        gap: 48px;
+        padding: 20px;
+}
+.prevention-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prevention-image > img {
+    width: 100%;
+}
+
+.prevention-description > h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42.66px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.prevention-description > p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29.04px;
+    color: #5F6368;
+    padding-bottom: 20px;
+}
+.prevention-illustration > h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 37.73px;
+    padding: 20px;
+}
+.prevention-illustration > h2 > span {
+    color: rgb(26, 232, 26);
+}
 @media (min-width: 768px) {
     .nav-bar {
         width: 100vw;
@@ -318,5 +401,30 @@ body {
         line-height: 28.44px;
         padding-bottom: 0;
     }
+    .countries-stats-items {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nations-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 0;
+}
+.symptoms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 20px;
+}
+.prevention-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 20px;
+}
 
 }
