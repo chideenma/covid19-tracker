@@ -51,12 +51,13 @@ body {
     padding-left: 13px;
 }
 .hero {
-    padding: 48px 48px 48px 90px;
+    padding: 20px;
 }
 .hero > h1 {
     font-weight: 500;
     font-size: 24px;
     line-height: 28.44px;
+    padding-bottom: 30px;
 }
 .global-stats {
     display: flex;
@@ -144,7 +145,240 @@ body {
 .totaldeaths > .circular {
     background: rgba(170, 42, 42, 0.05);
 }
+.nations-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 20px;
+}
+.nations > h1 {
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.44px;
+}
+.nations > p {
+    padding: 0 30px;
+    color: #777F8D;
+    text-transform: capitalize;
+}
+.country-pill {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: none;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+.country-pill > .country-span {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.country-pill > .country-span > span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.59px;
+}
+.country-pill:hover {
+    background-color: rgba(238, 238, 238, 0.34);
+}
+.country-pill > .country-count {
+    color: #2B6FF3;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+}
+.nations {
+    background-color: #fff;
+    padding: 20px;
+}
+.countries-stats > p {
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
 
+}
+.countries-stats-items {
+    display: block;
+}
+.countries-stats-items-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.countries-stats-items-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.items-button {
+    width: 100%;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid #F1F4FA;
+    background-color: transparent;
+}
+.button-totalcases {
+    display: block;
+    color: #777F8D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.59px;
+    text-align: center;
+    padding: 5px 0;
+
+}
+.totalcasescount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #2B6FF3;
+}
+.recoveredcasescount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #16B442;
+}
+.newcasescount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #2B6FF3;
+}
+.activecasescount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #F39911;
+}
+
+.totaldeathscount {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #D63232;
+
+}
+.items-button > span {
+    text-align: center;
+}
+.world-map > img {
+    width: 100%;
+}
+.symptoms {
+    display: grid;
+    grid-template-columns: 1fr;
+        width: 100%;
+        gap: 48px;
+        padding: 20px;
+}
+.symptoms-intro {
+    padding-top: 25px;
+}
+.symptoms-intro > span {
+    background-color: #E814540F;
+    color: #E81454;
+    padding: 10px 20px;
+    border-radius: 30px;
+
+}
+.symptoms-intro > h1 {
+    padding-top: 46px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42.66px;
+    padding-bottom: 18px;
+}
+.symptoms-intro > p {
+    font-size: 15px;
+    line-height: 31.44px;
+    color: #5F6368;
+}
+.symptoms-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.symptoms-image > img {
+    width: 50%;
+}
+.prevention {
+    padding-top: 48px;
+    background-color: #fff;
+}
+.prevention-content {
+    display: grid;
+    grid-template-columns: 1fr;
+        width: 100%;
+        gap: 48px;
+        padding: 20px;
+}
+.prevention-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prevention-image > img {
+    width: 50%;
+}
+
+.prevention-description > h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42.66px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.prevention-description > p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29.04px;
+    color: #5F6368;
+    padding-bottom: 20px;
+}
+.prevention-illustration > h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 37.73px;
+    padding: 20px 0 20px 0;
+}
+.prevention-illustration > h2 > span {
+    color: rgb(26, 232, 26);
+}
+.illustration-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.illustration-grid > div {
+    flex-basis: 1;
+}
+.illustration-grid-items > span {
+    display: block;
+    text-transform: capitalize;
+    font-size: 13px;
+    text-align: center;
+    line-height: 27.25px;
+    padding-top: 10px;
+}
+.illustration-grid-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #F1F4FA;
+    padding: 20px;
+}
 
 @media (min-width: 768px) {
     .nav-bar {
@@ -178,10 +412,65 @@ body {
     }
     .global-stats {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         background-color: #fff;
         padding: 20px;
         border-radius: 5px;
     }
+    .hero {
+        padding: 48px 48px 48px 90px;
+    }
+    .hero > h1 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28.44px;
+        padding-bottom: 0;
+    }
+    .countries-stats-items {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nations-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 0;
+}
+.symptoms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 50px 20px 50px 20px;
+}
+.symptoms-image > img {
+    width: 100%;
+}
+.prevention-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 20px;
+}
+.illustration-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.prevention-description > h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42.66px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.prevention-image > img {
+    width: 100%;
+}
 
 }
