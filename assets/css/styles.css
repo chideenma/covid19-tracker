@@ -384,7 +384,77 @@ body {
     border: 1px solid #F1F4FA;
     padding: 20px;
 }
+.footer {
+    background-color: #fff;
+    padding: 50px 70px;
+    margin: 100px 0;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+}
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-footer-left > span {
+    display: block;
+    padding: 40px;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+.footer-footer-left > a {
+    display: block;
+    padding: 2px 40px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.2px;
+    color: #000000;
+}
+.footer-socialmedia > span {
+    display: block;
+    padding: 40px;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+.footer-socialmedia > a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.2px;
+    color: #000000;
+}
+.footer-rightitems > span {
+    display: block;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+.footer-rightitems > a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.2px;
+    color: #000000;
+}
+.footer-footer {
+    display: flex;
+    gap: 200px;
+    padding: 200px 0 10px 0;
+}
+.footer-footer a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+}
 @media (min-width: 768px) {
     .nav-bar {
         width: 100vw;
