@@ -391,32 +391,30 @@ body {
 }
 .footer-content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 
 }
 .footer-left {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 .footer-footer-left > span {
     display: block;
-    padding: 40px;
+    padding: 10px;
     font-size: 14px;
     line-height: 16.94px;
 }
 .footer-footer-left > a {
     display: block;
-    padding: 2px 40px;
+    padding: 10px;
     text-decoration: none;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24.2px;
     color: #000000;
 }
 .footer-socialmedia > span {
     display: block;
-    padding: 40px;
+    padding: 10px;
     font-size: 14px;
     line-height: 16.94px;
 }
@@ -424,15 +422,20 @@ body {
     display: block;
     text-decoration: none;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24.2px;
     color: #000000;
+}
+.footer-rightitems {
+    padding: 10px 0;
+
 }
 .footer-rightitems > span {
     display: block;
     text-transform: capitalize;
     font-size: 14px;
     line-height: 16.94px;
+    padding-top: 20px;
 }
 .footer-rightitems > a {
     display: block;
@@ -443,9 +446,8 @@ body {
     color: #000000;
 }
 .footer-footer {
-    display: flex;
-    gap: 200px;
-    padding: 200px 0 10px 0;
+    display: block;
+    padding: 30px 0;
 }
 .footer-footer a {
     display: block;
@@ -454,6 +456,8 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 16.94px;
+    color: #000000;
+    padding-bottom: 10px;
 }
 @media (min-width: 768px) {
     .nav-bar {
@@ -566,6 +570,50 @@ body {
 }
 .prevention-image > img {
     width: 100%;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-footer {
+    display: flex;
+    gap: 200px;
+    padding: 200px 0 10px 0;
+}
+.footer-footer a {
+    padding-bottom: 0;
+}
+.footer-footer-left > span {
+    padding: 40px;
+}
+.footer-footer-left > a {
+    padding: 2px 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.2px;
+}
+.footer-socialmedia > span {
+    display: block;
+    padding: 40px;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+.footer-socialmedia > a {
+    font-size: 20px;
+
+}
+.footer-rightitems > span {
+    padding-top: 0;
+}
+.footer-rightitems {
+    padding: 50px 70px;
+
 }
 
 }
