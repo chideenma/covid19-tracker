@@ -39,19 +39,19 @@ body {
     text-transform: uppercase;
     line-height: 16.59px;
 }
-.nav-bar > button {
+.nav-button {
+    display: block;
     background-color: #C4C4C41F;
     border: none;
     color: #5F6368;
     padding: 10px;
     border-radius: 5px;
-    padding-bottom: 10px;
 }
 .eclipse {
     padding-left: 13px;
 }
 .hero {
-    padding: 20px;
+    padding:  0 20px;
 }
 .hero > h1 {
     font-weight: 500;
@@ -158,7 +158,8 @@ body {
     line-height: 28.44px;
 }
 .nations > p {
-    padding: 0 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
     color: #777F8D;
     text-transform: capitalize;
 }
@@ -195,7 +196,8 @@ body {
     padding: 20px;
 }
 .countries-stats > p {
-    padding-bottom: 25px;
+    margin-bottom: 20px;
+    padding-top: 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 21.33px;
@@ -213,6 +215,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.countries > button:first-child {
+    margin-top: 0;
 }
 .items-button {
     width: 100%;
@@ -309,7 +314,7 @@ body {
     align-items: center;
 } 
 .symptoms-image > img {
-    width: 50%;
+    width: 30%;
 }
 .prevention {
     padding-top: 48px;
@@ -407,8 +412,8 @@ body {
     .nav-center > a {
         padding: 10px 20px;
     }
-    .nav-bar > button {
-        padding-bottom: 0;
+    .nav-button {
+        padding: 10px;
     }
     .global-stats {
         display: flex;
@@ -419,17 +424,32 @@ body {
         border-radius: 5px;
     }
     .hero {
-        padding: 48px 48px 48px 90px;
+        padding: 100px 48px;
     }
     .hero > h1 {
         font-weight: 500;
         font-size: 24px;
         line-height: 28.44px;
-        padding-bottom: 0;
+        padding-bottom: 20px;
+    }
+    .nations {
+        padding: 40px 0px;
+        margin: 0 48px;
     }
     .countries-stats-items {
         display: flex;
         justify-content: space-between;
+    }
+    .countries-stats > p {
+        margin-bottom: 20px;
+        padding-top: 0;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21.33px;
+    
+    }
+    .countries > button:first-child {
+        margin-top: 30px;
     }
     .nations-grid {
         display: grid;
@@ -438,15 +458,20 @@ body {
         gap: 48px;
         padding: 0;
 }
+
 .symptoms {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
         width: 100%;
         gap: 48px;
-        padding: 50px 20px 50px 20px;
+        padding: 100px 48px;
 }
 .symptoms-image > img {
-    width: 100%;
+    width: 35%;
+}
+.prevention {
+    padding: 100px 0;
+    margin: 0 48px;
 }
 .prevention-content {
     display: grid;
