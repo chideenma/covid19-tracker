@@ -386,8 +386,8 @@ body {
 }
 .footer {
     background-color: #fff;
-    padding: 50px 70px;
-    margin: 100px 0;
+    padding: 50px 20px;
+    margin-top: 70px;
 }
 .footer-content {
     display: flex;
@@ -399,27 +399,30 @@ body {
 }
 .footer-footer-left > span {
     display: block;
-    padding: 10px;
     font-size: 14px;
     line-height: 16.94px;
 }
-.footer-footer-left > a {
+.footer-left-items > a {
     display: block;
-    padding: 10px;
+    padding: 10px 0;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 24.2px;
     color: #000000;
 }
+.footer-socialmedia-items {
+    padding-left: 0;
+}
 .footer-socialmedia > span {
     display: block;
-    padding: 10px;
+    padding-left: 0;
     font-size: 14px;
     line-height: 16.94px;
 }
-.footer-socialmedia > a {
+.footer-socialmedia-items > a {
     display: block;
+    padding: 10px 0;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -428,6 +431,7 @@ body {
 }
 .footer-rightitems {
     padding: 10px 0;
+    position: relative;
 
 }
 .footer-rightitems > span {
@@ -437,13 +441,28 @@ body {
     line-height: 16.94px;
     padding-top: 20px;
 }
-.footer-rightitems > a {
+.footer-rightitems > input {
     display: block;
+    width: 100%;
     text-decoration: none;
+    padding: 10px 0;
+    text-transform: capitalize;
     font-weight: 500;
     font-size: 20px;
     line-height: 24.2px;
     color: #000000;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #000000;
+}
+.footer-rightitems > input::placeholder {
+    color: #000000;
+}
+.footer-rightitems > svg {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
 }
 .footer-footer {
     display: block;
@@ -571,6 +590,11 @@ body {
 .prevention-image > img {
     width: 100%;
 }
+.footer {
+    background-color: #fff;
+    padding: 50px 48px;
+    margin-top: 150px;
+}
 .footer-content {
     display: flex;
     flex-direction: row;
@@ -586,26 +610,31 @@ body {
     gap: 200px;
     padding: 200px 0 10px 0;
 }
-.footer-footer a {
+.footer-footer  > a {
     padding-bottom: 0;
 }
-.footer-footer-left > span {
-    padding: 40px;
+.footer-left-items {
+    padding-top: 40px;
 }
-.footer-footer-left > a {
-    padding: 2px 40px;
+.footer-left-items > a {
+    padding: 5px 0;
     font-weight: 500;
     font-size: 20px;
     line-height: 24.2px;
 }
 .footer-socialmedia > span {
     display: block;
-    padding: 40px;
+    padding-left: 40px;
     font-size: 14px;
     line-height: 16.94px;
 }
-.footer-socialmedia > a {
+.footer-socialmedia-items {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.footer-socialmedia-items > a {
     font-size: 20px;
+    padding: 5px 0;
 
 }
 .footer-rightitems > span {
@@ -614,6 +643,11 @@ body {
 .footer-rightitems {
     padding: 50px 70px;
 
+}
+.footer-rightitems > svg {
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
 }
 
 }
